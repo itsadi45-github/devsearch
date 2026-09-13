@@ -2,10 +2,9 @@
 
 A frontend web app to search any GitHub username and explore their public repositories — filter by language, sort by stars, and view quick stats. Built with vanilla JavaScript (no frameworks) as a hands-on project to practice core JS concepts.
 
-🔗 Live Demo: [https://YOUR_USERNAME.github.io/devsearch/](https://YOUR_USERNAME.github.io/devsearch/)  
-(update this link once deployed via GitHub Pages)
+🔗 Live Demo: [ https://itsadi45-github.github.io/devsearch/]
 
----
+
 
 ## Features
 
@@ -17,7 +16,7 @@ A frontend web app to search any GitHub username and explore their public reposi
 - ⚠️ Built-in rate limiter — warns and temporarily blocks repeated searches for the same username, protecting GitHub's API quota
 - 🚫 Graceful error handling for invalid usernames or API failures
 
----
+
 
 ## Tech Stack
 
@@ -28,7 +27,7 @@ A frontend web app to search any GitHub username and explore their public reposi
 
 No build tools, no bundlers, no dependencies — pure JS, intentionally, to focus on fundamentals.
 
----
+
 
 ## Concepts Practiced
 
@@ -50,7 +49,7 @@ This project was built specifically to apply core JavaScript concepts in a real,
 | Pure functions | `utils.js` — `sortRepos()`, `getTotalStars()` (no side effects, no mutation) |
 | Currying | `utils.js` — `filterByLanguage(lang)(repos)` |
 
----
+
 
 ## Project Structure
 
@@ -66,7 +65,7 @@ devsearch/
 └── README.md
 
 
----
+
 
 ## Running Locally
 
@@ -79,7 +78,7 @@ devsearch/
 
 No `npm install` needed — zero dependencies.
 
----
+
 
 ## Known Limitations
 
@@ -87,7 +86,7 @@ No `npm install` needed — zero dependencies.
 - Rate limiter is per-browser: Since there's no backend, the limiter uses `localStorage`, so it can be bypassed by clearing browser storage or using incognito mode. A production version would move this enforcement server-side.
 - Future improvement: Route API calls through a serverless function (e.g. Vercel/Cloudflare Workers) holding a personal access token, raising the real limit to 5,000 requests/hour and making rate-limiting genuinely enforceable per-user rather than per-browser.
 
----
+
 
 ## Author
 
